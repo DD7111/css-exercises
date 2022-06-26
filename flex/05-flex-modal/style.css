@@ -15,7 +15,14 @@ body {
   justify-content: center;
 }
 
+.header {
+  font-weight:bold;
+  margin: auto;
+  align-self:flex-start
+}
+
 .modal {
+  padding:15px;
   background: white;
   width: 480px;
   border-radius: 10px;

@@ -5,6 +5,8 @@ body {
   margin: 0;
   overflow: hidden;
   font-family: Roboto, sans-serif;
+  display: flex;
+  justify-content: center;
 }
 
 img {
@@ -30,6 +32,10 @@ ul {
   list-style-type: none; /* remove bullets */
 }
 
+a {
+  text-decoration: none;
+}
+
 .content {
   display: flex;
   flex-direction: column;
@@ -39,10 +45,28 @@ ul {
 
 .header {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
 .footer {
   display: flex;
   flex-direction: column;
+  justify-content: flex-end;
+}
+
+.bottom {
+  display: flex;
+  flex-direction: row;
+}
+
+.left-links {
+  display: flex;
+  flex-direction: row;
+
+}
+
+.right-links {
+  display: flex;
+  flex-direction: row;
 }

@@ -16,9 +16,9 @@ body {
 }
 
 .header {
-  font-weight:bold;
-  margin: auto;
-  align-self:flex-start
+  font-weight:bolder;
+  font-size: larger;
+  margin-right: auto;
 }
 
 .modal {
@@ -27,9 +27,8 @@ body {
   width: 480px;
   border-radius: 10px;
   box-shadow: 2px 4px 16px rgba(0,0,0,.2);
-  display: flex;
-  gap: 15px;
-  flex-direction: column;
+  display: flex; /*make everything inside a flex item*/
+  gap: 15px; /*space the items inside the modal out*/
 }
 
 .icon {
@@ -43,10 +42,11 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  flex-shrink: 0;
+  flex-shrink: 0; /*stop icon getting squished*/
 }
 
 .close-button {
+  margin-left: auto; /*push button to corner */
   background: #eee;
   border-radius: 50%;
   color: #888;
@@ -75,4 +75,17 @@ button.cancel {
   border: 1px solid #ddd;
   color: royalblue;
 }
+
+.text {
+  display:flex;
+  justify-content: flex-end;
+  margin: 15px 0;
+}
+
+/* to align header*/
+.two {
+  display: flex;
+  justify-content: flex-start;
+}
+
 
